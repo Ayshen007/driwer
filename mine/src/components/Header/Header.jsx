@@ -4,6 +4,7 @@ import { MdEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoPerson } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -24,10 +25,10 @@ const Header = () => {
       <div className="w-[100%] bg-amber-100 h-20 flex justify-between  items-center">
         <p className="text-2xl ml-2.5">Carint</p>
       <ul  className="flex gap-4 mr-3 ">
-       <li>HOME</li>
-       <li>SERVICES</li>
-       <li>ABOUT</li>
-       <li>CONTACT US</li>
+       <li> <Link to="/"> HOME </Link></li> 
+       <li><Link to="/services">SERVICES</Link> </li>
+       <li> <Link to="/about">ABOUT</Link> </li>
+       <li> <Link to="contact">CONTACT US</Link></li>
        <li className="flex justify-center items-center"><IoPerson />LOGIN</li>
          <div className="text-xl">   <IoSearch /></div>
 
